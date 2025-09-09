@@ -1,0 +1,140 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #53d22d;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-[#121810]">
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+<div class="flex flex-1">
+<aside class="flex flex-col w-64 bg-[#182315] p-6 shrink-0">
+<div class="flex items-center gap-3 mb-10">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADANp4UJsnDlvdTetpXSjE2v4VyhxFWr3zHV1sEVELuDvbO4EKa4LOd75KSyqDaDEjUh-n-O5M0nHvx2Nu9WnNqkprMPcW6LI2wQHnG9nVYVv8AtmJUnmuDgKe-VAXh_m8YcCGlpW79IwyGCHYY4csmVmpy_kgloWZHexoSN_MJLwhABNOiKNfJmwKod49KbcY-TAlJW_uO9I1WmCKkoYEDbzGsdOmW6ejoZvQhZ5HYd8DQbWvF5rvME-0gdafj7KPPU7blb4WRmI");'></div>
+<h1 class="text-white text-lg font-bold">Sports Hub</h1>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<a class="flex items-center gap-3 px-4 py-2 text-zinc-300 hover:text-white hover:bg-[#2e4328]/50 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-sm font-medium">Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-zinc-300 hover:text-white hover:bg-[#2e4328]/50 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span class="text-sm font-medium">Matches</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-zinc-300 hover:text-white hover:bg-[#2e4328]/50 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-sm font-medium">Teams</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-zinc-300 hover:text-white hover:bg-[#2e4328]/50 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">newspaper</span>
+<span class="text-sm font-medium">News</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-white bg-[var(--primary-color)] rounded-full" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+</nav>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2 text-zinc-300 hover:text-white hover:bg-[#2e4328]/50 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined">help_outline</span>
+<span class="text-sm font-medium">Help</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 p-8 bg-[#121810]">
+<header class="mb-10 flex justify-between items-center">
+<h1 class="text-white text-4xl font-bold">Settings</h1>
+<div class="flex items-center gap-2">
+<p class="text-sm font-medium text-zinc-300">Language:</p>
+<div class="relative">
+<select class="appearance-none bg-zinc-800 border border-zinc-700 text-white text-sm rounded-full py-2 pl-4 pr-10 focus:outline-none focus:border-green-500">
+<option>English</option>
+<option>العربية</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none">expand_more</span>
+</div>
+</div>
+</header>
+<div class="space-y-12">
+<section>
+<h2 class="text-zinc-200 text-2xl font-bold tracking-tight mb-6">Preferences</h2>
+<div class="space-y-1 divide-y divide-zinc-700/50">
+<div class="flex items-center justify-between py-5">
+<div>
+<p class="text-white text-base font-medium">Time Zone</p>
+<p class="text-zinc-400 text-sm">Select your preferred time zone for match schedules.</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-zinc-300 text-base">(GMT-5:00) Eastern Time</p>
+<span class="material-symbols-outlined text-zinc-400">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-5">
+<div>
+<p class="text-white text-base font-medium">Notifications</p>
+<p class="text-zinc-400 text-sm">Enable or disable push notifications for match updates.</p>
+</div>
+<label class="relative flex h-8 w-14 cursor-pointer items-center rounded-full border-none bg-zinc-700 p-1 has-[:checked]:bg-[var(--primary-color)] transition-colors">
+<div class="h-6 w-6 rounded-full bg-white transition-transform duration-300 ease-in-out transform translate-x-0 has-[:checked]:translate-x-6"></div>
+<input checked="" class="invisible absolute peer" type="checkbox"/>
+</label>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-zinc-200 text-2xl font-bold tracking-tight mb-6">Reminders</h2>
+<div class="divide-y divide-zinc-700/50">
+<div class="flex items-center justify-between py-5">
+<div>
+<p class="text-white text-base font-medium">Match Reminders</p>
+<p class="text-zinc-400 text-sm">Set reminders for upcoming matches you don't want to miss.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-zinc-700 hover:bg-zinc-600 text-white text-sm font-medium transition-colors">
+<span>Set Reminders</span>
+</button>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-zinc-200 text-2xl font-bold tracking-tight mb-6">Account</h2>
+<div class="divide-y divide-zinc-700/50">
+<div class="flex items-center justify-between py-5">
+<div>
+<p class="text-white text-base font-medium">Account Management</p>
+<p class="text-zinc-400 text-sm">Manage your account details and settings.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-zinc-700 hover:bg-zinc-600 text-white text-sm font-medium transition-colors">
+<span>Manage Account</span>
+</button>
+</div>
+<div class="flex items-center justify-between py-5">
+<div>
+<p class="text-white text-base font-medium">Log Out</p>
+<p class="text-zinc-400 text-sm">Log out from your current session.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-red-800/50 hover:bg-red-800/80 text-red-300 hover:text-white text-sm font-medium transition-colors">
+<span>Log Out</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+</body></html>

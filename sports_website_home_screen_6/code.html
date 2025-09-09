@@ -1,0 +1,223 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1173d4;
+      }
+    </style>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#233648] px-10 py-4">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3 text-[var(--primary-color)]">
+<span class="material-symbols-outlined text-4xl"> sports_soccer </span>
+<h1 class="text-white text-xl font-bold">MatchTracker</h1>
+</div>
+<nav class="flex items-center gap-6">
+<a class="text-white text-base font-medium transition-colors hover:text-[var(--primary-color)]" href="#">Home</a>
+<a class="text-white text-base font-medium transition-colors hover:text-[var(--primary-color)]" href="#">Matches</a>
+<a class="text-white text-base font-medium transition-colors hover:text-[var(--primary-color)]" href="#">News</a>
+<a class="text-white text-base font-medium transition-colors hover:text-[var(--primary-color)]" href="#">Teams</a>
+<a class="text-white text-base font-medium transition-colors hover:text-[var(--primary-color)]" href="#">Standings</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-2 rounded-full bg-red-600 px-4 py-2 text-white transition-colors hover:bg-red-700" href="#">
+<div class="relative flex h-3 w-3">
+<div class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></div>
+<div class="relative inline-flex h-3 w-3 rounded-full bg-red-500"></div>
+</div>
+<span class="text-sm font-bold">Live Matches</span>
+</a>
+<div class="relative">
+<button class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined"> language </span>
+<span class="text-sm font-medium">English</span>
+<span class="material-symbols-outlined"> expand_more </span>
+</button>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#92adc9]"> search </span>
+<input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-white focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border-none bg-[#233648] h-10 placeholder:text-[#92adc9] pl-10 pr-4 text-base" placeholder="Search" value=""/>
+</div>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-md bg-[#233648] text-white transition-colors hover:bg-[var(--primary-color)]">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcD-FMJI13I5SLs24CZf0pju4f1aJ50zyo1C_pT46xSx-JuBE_ZUyXXVYEkDfn7AzUxCK2BH_O-jczpS0hgzFCvq6i7AyrFtdjeljhfdlP42AMzsFL30PiJMzuZQtgqr3SlQqEBAABe5fGSApbUf1MlhEmYR5dlE_UkLQvqR2xX7WX20YJ0ERR7U0-UDYt6bbwtNurx8-qalkGGgUYgXA3CBvFj2iGT5k0UvbxaJ5MaHl1UeD016pJ3Ohej1cgmyd8SIFGztF76tk");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-6xl flex-1 px-4">
+<h2 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em] pb-4">Featured Matches</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg bg-[#192633] p-4 transition-transform hover:scale-105">
+<div class="flex justify-between items-center">
+<span class="text-sm text-[#92adc9]">La Liga</span>
+<div class="flex items-center gap-2 rounded-full bg-red-600/10 px-2 py-1 text-xs font-bold text-red-500">
+<div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+<span>LIVE</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="Real Madrid logo" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmnlbYsndNxRTJFV1ZF5srjwQIEZcnTF8u5Wt1ySgTvHexnz7DElibdZmlx9Q-Qzgs0qyTWyP3bX_pwBILXOHLGfANeWolenxdMVe0Nsr6LUJG-ANQ0mfo9KP84CtnzFVSJYMbtajAK0cO1pqg_M1HlHj3Y7lg2Y5bPsIXU44y00aM9owHZSI7bZb2cmSTcbFy9AhX8it3yOCbDT9BbAFZF_XvCHEppeFbwljbGB_M83qGu7d_WFaP3ms-QjKZxX6nGXmj3wzYOMk"/>
+<span class="text-white text-lg font-medium">Real Madrid</span>
+</div>
+<span class="text-white text-2xl font-bold">2</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="FC Barcelona logo" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOOh_CAi3mGnEiJlJR86ggGHHQdJfhHeXq70gl9zOTM--fwAWvfj271s9XWUZxQvP_Tcr0P6prg0ThPkfSgv4pVisuMKWUEY5BJnW3DRCO1_OpefvOncXucDl-TowjlBOrNzOgUS1uck7LNC5lccTtj4N90xDeV_8ooGzA21hTyiVWqP-0Xilb5svnuYi30YO5ynpU59xB3vW5l7UWzFxX56NyTT5ODo8TTklbnixeFDO2TUbbg6M4XoVcTW5ZNWonHnRgbR08AJs"/>
+<span class="text-white text-lg font-medium">FC Barcelona</span>
+</div>
+<span class="text-white text-2xl font-bold">1</span>
+</div>
+<div class="flex justify-between items-center text-sm text-[#92adc9] pt-2 border-t border-[#233648]">
+<span>75'</span>
+<a class="text-[var(--primary-color)] hover:underline" href="#">Match Details</a>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg bg-[#192633] p-4 transition-transform hover:scale-105">
+<div class="flex justify-between items-center">
+<span class="text-sm text-[#92adc9]">Premier League</span>
+<div class="flex items-center gap-2 rounded-full bg-red-600/10 px-2 py-1 text-xs font-bold text-red-500">
+<div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+<span>LIVE</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="Manchester United logo" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzaTAnRgRO8Y3QmDhs7PCOzLF2Ad4vfYsJsmNzS2D68USyrm4E_6i1AN7OV8ZGBY4XObuW3fGeYZrp9oHcu2x1JQeB4-TcDWwEca2bA0QwpQ9y2FcPz5B70op1r-_dhpiiuTN93yJAbsNQ1HmwULml0buIsqOtuJ03QG3VX2QOSU5PQWAMHNZljzhqNU4_Ft5Zy32dzEeTnHidwUmwZsgF-vL7Pks_DBE4RSnDlUVVNoDN11axC9CcImsLq36PSQBr7sL_hgbTL9g"/>
+<span class="text-white text-lg font-medium">Manchester United</span>
+</div>
+<span class="text-white text-2xl font-bold">3</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="Liverpool logo" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrZK3fgngaokyTneEHvSt5YTREUJWqltfHbHA4A9kPNiy1ByxzsFJQMhrfn1EbSMugbGlXU-JWL51y-RRtniaHB8UCDbn_PM6m4556EvGa_MXqrcR5teOwcRkqbi96JlwQBeW5J-r1sgUt9Acnkoh7iD5tGr1eSKUoRsnYZXN5UEZxIpK4DInOKsEdHNhroiqRIomTcCpbNi5E1ZfuPpezhORj7x443ybdMzFudK5_BuPZHtcRwO5sOMVa_alfFvWi7OYJkUSUJDA"/>
+<span class="text-white text-lg font-medium">Liverpool</span>
+</div>
+<span class="text-white text-2xl font-bold">3</span>
+</div>
+<div class="flex justify-between items-center text-sm text-[#92adc9] pt-2 border-t border-[#233648]">
+<span>82'</span>
+<a class="text-[var(--primary-color)] hover:underline" href="#">Match Details</a>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg bg-[#192633] p-4 transition-transform hover:scale-105">
+<div class="flex justify-between items-center">
+<span class="text-sm text-[#92adc9]">Serie A</span>
+<div class="flex items-center gap-2 rounded-full bg-red-600/10 px-2 py-1 text-xs font-bold text-red-500">
+<div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
+<span>LIVE</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="AC Milan logo" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkuLtPnPCHmMptWfQKyGqYbDxxLUAs_DiR0S7U-oM-dwiwCQ-PwzwyJKEDnZ1o4j5FNOFLEaXkqcdj-AoPdc5n-nZBK3MES0T25NioPVr1HmpdSEF_IVwmvw3t0nmLvJzVKVpWUVmdt82upKhictojOW3s-0b93c-jkD_Y1ZIQEVQ6lwkuvqPCyqv3kIN-QBASGHSrlFD4JvZcbUIAeLq23LD2ReSnxslevIZL0-WIFQeCRhGSgrGF94FXiXu4Jzp6ehcj_Ypm2pk"/>
+<span class="text-white text-lg font-medium">AC Milan</span>
+</div>
+<span class="text-white text-2xl font-bold">0</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="Juventus logo" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTfV_STy20OcGeekEC-kxOGDlw2RN5_p9-5j3s1NQcee1HfNJMR2PL6jZQwJRWc-tWeO8r00RedkYUSUhLyhyLVbOKkDBE12YQ_apnJVSfwFEYt4PoR_albTA8dcpG7_jOnj2LIqI_J9_7iK888Zw-Gpv8Z5nCnMSR1UbXKR9ZiTFYRBbYPICgTaKkdR2GDIZkmDAzKADIwDcCDVFns2dW9TEsnLXYkrwhJBnVVSB6HVUQ-q-c6wgnLbsw2ZNtJ6pUyl4HZlA3JTY"/>
+<span class="text-white text-lg font-medium">Juventus</span>
+</div>
+<span class="text-white text-2xl font-bold">0</span>
+</div>
+<div class="flex justify-between items-center text-sm text-[#92adc9] pt-2 border-t border-[#233648]">
+<span>68'</span>
+<a class="text-[var(--primary-color)] hover:underline" href="#">Match Details</a>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+<div class="lg:col-span-2">
+<h2 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">Upcoming Matches</h2>
+<div class="overflow-hidden rounded-md border border-[#324d67] bg-[#192633]">
+<table class="w-full">
+<thead class="bg-[#233648]">
+<tr>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Time</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Teams</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Competition</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#324d67]">
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">15:00</td>
+<td class="px-6 py-4 whitespace-nowrap text-white">Chelsea vs. Arsenal</td>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">Premier League</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">17:30</td>
+<td class="px-6 py-4 whitespace-nowrap text-white">Bayern Munich vs. Borussia Dortmund</td>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">Bundesliga</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">20:00</td>
+<td class="px-6 py-4 whitespace-nowrap text-white">Paris Saint-Germain vs. Olympique Marseille</td>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">Ligue 1</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">16:00</td>
+<td class="px-6 py-4 whitespace-nowrap text-white">Atletico Madrid vs. Sevilla</td>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">La Liga</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">19:00</td>
+<td class="px-6 py-4 whitespace-nowrap text-white">Inter Milan vs. Napoli</td>
+<td class="px-6 py-4 whitespace-nowrap text-[#92adc9]">Serie A</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="lg:col-span-1">
+<h2 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">Top News</h2>
+<div class="space-y-4">
+<a class="block bg-[#192633] rounded-md p-4 transition-transform hover:scale-105" href="#">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<p class="text-white font-semibold">Lionel Messi's Transfer to Inter Miami</p>
+<p class="text-gray-400 text-sm mt-1">The football legend makes a surprising move to the American league.</p>
+</div>
+<div class="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-md" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBavlah6YkNv8gZyvgwVnirr5W2aF9AjBNZ6WIDtnaXvVn1aZ26rBg5AcRhbLsixEtbE02ORy4j2cRDo6V-i86RR8zFKWo1Sdrmutck5m88t8Ciw1L4y3YnDL1Nd7DzyHAPhKyZjg8b1p7THCVcRBRFnW4JZ3QaPMBiBqYs5H0igOHkPDHkdE-7DATB3wNbxkVturpFrE39YsoT6nBwcsEuX9MK3PlKhIu5db74PIowVXII3HinMqwZQAKytzhDfxK0x4494u4XJaA");'></div>
+</div>
+</a>
+<a class="block bg-[#192633] rounded-md p-4 transition-transform hover:scale-105" href="#">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<p class="text-white font-semibold">Champions League Draw Results</p>
+<p class="text-gray-400 text-sm mt-1">The draw for the group stage has set up thrilling matchups.</p>
+</div>
+<div class="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-md" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBzkjSvNNpclb2dFK8vYaA4yx1upwTs7OwXR_9eQLuOYLDKzTz5QO1bqe6kbfddYhIktx2d29iUvtds18bkX89oRY4autwXrtThaFD9Hcb7t7TQbQ59aDOCIJJR4iTW4e0VG2VY4tTLJ1nmaCQrDk3M5CHPwvLp10JlbKxqUOip2kLdABsZUErjxluej5jdSzRf0i1dhYfoJKQ6J8LfEMMwyUXBxM4x6vnsmFfCWQ4flyU3bEQw8kDTnhaXy8CrptwnfSIbXPMkcxA");'></div>
+</div>
+</a>
+<a class="block bg-[#192633] rounded-md p-4 transition-transform hover:scale-105" href="#">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<p class="text-white font-semibold">Injury Update: Kevin De Bruyne</p>
+<p class="text-gray-400 text-sm mt-1">Manchester City's star is ruled out due to a hamstring injury.</p>
+</div>
+<div class="w-24 h-16 bg-center bg-no-repeat bg-cover rounded-md" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuByBT7kn-9U6tkvkx6z1ejJKXw_u9QtPXUzT16IsaVvSIBtGWFbNL4K_TWRFY4PFeDzw7W9vxeZ13c1w3UvgLSIbRlBBmO790QaCyUz7i56F-CWAMG24lByQrWD1wmR3GaUDlp_z8cVUvnPgZ3nC2OBrs60DBHEYCDUlcMdmULXhAasKAWpjMk4lQTgu6ame-PyGJOXxhahEwHjST-npthgR2yI_PUGTtry1W1Q2JADc4uiYgK99MrG8ZZZEpfe0D4lEFKKvZnoHZk");'></div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

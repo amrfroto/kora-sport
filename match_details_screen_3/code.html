@@ -1,0 +1,163 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #53d22d;
+      }
+    </style>
+</head>
+<body class="bg-[#162013] font-sans">
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2E4328] px-10 py-4">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-4xl text-[var(--primary-color)]"> sports_soccer </span>
+<h2 class="text-white text-xl font-bold leading-tight">Sports Hub</h2>
+</div>
+<nav class="flex items-center gap-6">
+<a class="text-white text-base font-medium leading-normal hover:text-[var(--primary-color)] transition-colors" href="#">Home</a>
+<a class="text-white text-base font-medium leading-normal hover:text-[var(--primary-color)] transition-colors" href="#">Matches</a>
+<a class="text-white text-base font-medium leading-normal hover:text-[var(--primary-color)] transition-colors" href="#">Teams</a>
+<a class="text-white text-base font-medium leading-normal hover:text-[var(--primary-color)] transition-colors" href="#">News</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<label class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#A2C398]"> search </span>
+<input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full border-none bg-[#2E4328] py-2.5 pl-10 pr-4 text-white placeholder:text-[#A2C398] focus:outline-0 focus:ring-2 focus:ring-inset focus:ring-[var(--primary-color)]" placeholder="Search" value=""/>
+</label>
+<button class="flex h-11 w-11 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[#2E4328] text-white transition-colors hover:bg-[var(--primary-color)]">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-11 border-2 border-transparent hover:border-[var(--primary-color)] transition-colors cursor-pointer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnFiqUPRA89OUxVeQ0qljNKbll6oLix0stJYq0pnR1BtP1I_GcKT9zuSTNBKzPyd5QKm9LGFiD89FJnIgNWsKpjNkt6PheTCzCTXNWI1W05AmNDKjv8J8LvRCB_hxiMdzAyKfmRKy8GGx0qFMYBXsJWdRfpk41m6DikD-is_iSiTWhCUFlnqWOgKlKbAHgEjs1avMHEQ2DEpUOuCCUzGoSwm2zsZw7gSGYJ-PDFNhnDOHrZmthrzAyavgI3cmGqcPx9sWneOefk0c");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-8">
+<div class="layout-content-container w-full max-w-5xl px-4">
+<div class="flex items-center gap-2 text-sm text-[#A2C398] mb-6">
+<a class="hover:text-white" href="#">Matches</a>
+<span>/</span>
+<a class="hover:text-white" href="#">Live</a>
+<span>/</span>
+<span class="text-white">Real Madrid vs. FC Barcelona</span>
+</div>
+<div class="flex items-center justify-between mb-6">
+<h1 class="text-white text-4xl font-bold">Real Madrid vs. FC Barcelona</h1>
+<span class="text-[#A2C398] text-lg">Live</span>
+</div>
+<div class="border-b border-[#426039] mb-8">
+<nav class="flex gap-8">
+<a class="flex flex-col items-center justify-center border-b-2 border-b-[var(--primary-color)] pb-3 pt-1 text-white" href="#">
+<p class="text-base font-bold">Overview</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-b-transparent pb-3 pt-1 text-[#A2C398] hover:text-white hover:border-b-white transition-colors" href="#">
+<p class="text-base font-bold">Lineups</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-b-transparent pb-3 pt-1 text-[#A2C398] hover:text-white hover:border-b-white transition-colors" href="#">
+<p class="text-base font-bold">Stats</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-b-transparent pb-3 pt-1 text-[#A2C398] hover:text-white hover:border-b-white transition-colors" href="#">
+<p class="text-base font-bold">Commentary</p>
+</a>
+</nav>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2">
+<section class="mb-8">
+<h2 class="text-white text-2xl font-bold mb-4">Live Score</h2>
+<div class="flex items-center justify-center gap-8 rounded-2xl bg-[#2E4328] p-8">
+<div class="flex flex-col items-center gap-4">
+<p class="text-white text-2xl font-bold">Real Madrid</p>
+</div>
+<div class="text-white text-6xl font-bold">2 - 1</div>
+<div class="flex flex-col items-center gap-4">
+<p class="text-white text-2xl font-bold">FC Barcelona</p>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h2 class="text-white text-2xl font-bold mb-4">Match Stats</h2>
+<div class="grid grid-cols-2 gap-x-8 gap-y-4 rounded-2xl bg-[#2E4328] p-6">
+<div class="flex justify-between items-center text-lg">
+<span class="text-[#A2C398]">Possession</span>
+<span class="text-white font-semibold">55%</span>
+</div>
+<div class="flex justify-between items-center text-lg text-right">
+<span class="text-white font-semibold">45%</span>
+<span class="text-[#A2C398]">Possession</span>
+</div>
+<div class="w-full col-span-2 bg-[#426039] rounded-full h-2.5">
+<div class="bg-[var(--primary-color)] h-2.5 rounded-full" style="width: 55%"></div>
+</div>
+<div class="flex justify-between items-center text-lg">
+<span class="text-[#A2C398]">Shots on Goal</span>
+<span class="text-white font-semibold">8</span>
+</div>
+<div class="flex justify-between items-center text-lg text-right">
+<span class="text-white font-semibold">5</span>
+<span class="text-[#A2C398]">Shots on Goal</span>
+</div>
+<div class="flex justify-between items-center text-lg">
+<span class="text-[#A2C398]">Corners</span>
+<span class="text-white font-semibold">6</span>
+</div>
+<div class="flex justify-between items-center text-lg text-right">
+<span class="text-white font-semibold">3</span>
+<span class="text-[#A2C398]">Corners</span>
+</div>
+<div class="flex justify-between items-center text-lg">
+<span class="text-[#A2C398]">Fouls</span>
+<span class="text-white font-semibold">12</span>
+</div>
+<div class="flex justify-between items-center text-lg text-right">
+<span class="text-white font-semibold">9</span>
+<span class="text-[#A2C398]">Fouls</span>
+</div>
+</div>
+</section>
+</div>
+<div class="lg:col-span-1">
+<section>
+<h2 class="text-white text-2xl font-bold mb-4">Recent Highlights</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-[#2E4328] hover:bg-[#3a5232] transition-colors">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-lg flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArLXr29OJBKT4JUkqFUi5mXqUZtgSpV7VQHkVkGDkwe5i77HAraWO6iy_MwzWv4fXUtLa3Bd-QpeJlyW4aQCm_qIxUEybgLqHPqhQDJREvJO4KaweW3hD__XL33aCYKAQmtMRIfoQzxhdNu5V-wdznQ38d2Vi6taVaT3RLBtQOCLbpygy60XZs_v4iArmb7zDtbGh2GpC4dx5d16SZ6kvwSpNkR0QAmQIJawRNJHBGhDWCeHzcaC37GN1Z_hRdndwjnc-lyqU9eO8");'></div>
+<div class="flex flex-col">
+<p class="text-sm text-[var(--primary-color)] font-semibold">75' Goal!</p>
+<p class="text-white text-base font-bold leading-tight">Marcus scores for Real Madrid</p>
+<p class="text-[#A2C398] text-sm mt-1">Puts Real Madrid ahead with a stunning strike.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-[#2E4328] hover:bg-[#3a5232] transition-colors">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-lg flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCyFEZKR9HqE2dob0E7EDe9s5UjECEc3r-WpsgWqTinygPdYi8OLHna3g1omqYF6TBHPCzK4pog3cn3TUzJfXgDay9o2W6lOIelplA7uicK8Cfl-SQCENAkprOKXpMJ8gw7geq6FgDQSoz3YIQnV5Q7ZGHXD0bzPluDbrss81kJnZJ7K0f1wMjALux-wYNhVtNDMJS-dV3OsnPjLMm2rqXvZ4z1L9VrUcYQCF5X50fnt6PwQbESQ5PI6yNU2m7N_2EkVfBgW8A5oUE");'></div>
+<div class="flex flex-col">
+<p class="text-sm text-[#A2C398] font-semibold">68' Substitution</p>
+<p class="text-white text-base font-bold leading-tight">FC Barcelona makes a change</p>
+<p class="text-[#A2C398] text-sm mt-1">Lucas replaces David.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-[#2E4328] hover:bg-[#3a5232] transition-colors">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover rounded-lg flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7sOnmWP6NymdEeYxE0e4ugKz0ihFE-UBXqJQyUxrbXlryOrBurJ2SCjAYbd6FsvBjlnDmwg8D6hzbDwzm-mYaL0DP5naYQtjIHT4k-aOiRzcQZotTPh9OheeRAf1eASoAdbRgfwxIz4TWLyexh99wnjH_ICKx6uFtiDfFhnW2vV2aeVeo4CAxB6t6eTmgPmrgESoSfTfy4kaWb_K3t8syeXAHC6vcvFwGweQzJ_xXA_geDxu7b2_jZLdNeUiCISniPKS36bicpzo");'></div>
+<div class="flex flex-col">
+<p class="text-sm text-yellow-400 font-semibold">55' Yellow Card</p>
+<p class="text-white text-base font-bold leading-tight">Kevin booked</p>
+<p class="text-[#A2C398] text-sm mt-1">Receives a yellow for a late tackle.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
